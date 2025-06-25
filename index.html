@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password Verifiation</title>
+</head>
+<body>
+     <div class="container">
+    <h2>Password Verification</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <p class="errormsg" id="nameError"></p>
+      <input type="password" id="password" placeholder="Password" required>
+      <p class="errormsg" id="passworderror"></p>
+      <input type="password" id="repassword" placeholder="Confirm Password" required>
+      <p class="errormsg" id="repassworderror"></p>
+
+      <button type="submit" id="btn">Submit</button>
+      <p class="errormsg" id="submiterror"></p>
+    </form>
+  </div>
+
+  <style>
+  
+    body {
+      font-family: Arial, sans-serif;
+      background:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background:white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #218838;
+    }
+
+    .errormsg{
+      color: red;
+      font-size: 14px;
+      margin-top:0 0 8px 4px;
+      text-align: center;
+    }
+
+   
+  </style>
+  <script src="script.js"></script>
+
+</body>
+</html>
+ 
+ 
+
+  
+
+  
+
